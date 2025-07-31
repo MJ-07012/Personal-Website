@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marlon Jordan | Operations Professional</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #0a192f;
+            color: #ccd6f6;
+        }
+        .glass-effect {
+            background: rgba(13, 30, 58, 0.6);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .highlight-text {
+            color: #64ffda;
+        }
+        .section-heading {
+            color: #ccd6f6;
+        }
+        .nav-link {
+            transition: color 0.3s ease;
+        }
+        .nav-link:hover {
+            color: #64ffda;
+        }
+        .cta-button {
+            transition: all 0.3s ease;
+        }
+        .cta-button:hover {
+            background-color: #64ffda;
+            color: #0a192f;
+            transform: translateY(-3px);
+            box-shadow: 0 4px 10px rgba(100, 255, 218, 0.2);
+        }
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: -30px;
+            top: 5px;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background-color: #0a192f;
+            border: 3px solid #64ffda;
+        }
+        .timeline-line {
+            position: absolute;
+            left: -21px;
+            top: 5px;
+            bottom: 0;
+            width: 2px;
+            background-color: #1e293b;
+        }
+        .skill-card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .skill-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+        }
+        .fade-in-section {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        }
+        .fade-in-section.is-visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body class="antialiased leading-relaxed">
+
+    <!-- Header -->
+    <header class="fixed top-0 left-0 right-0 z-50 glass-effect shadow-md">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold highlight-text tracking-wider">MJ</a>
+            <nav class="hidden md:flex space-x-8">
+                <a href="#about" class="nav-link text-lg">About</a>
+                <a href="#experience" class="nav-link text-lg">Experience</a>
+                <a href="#skills" class="nav-link text-lg">Skills</a>
+                <a href="#contact" class="nav-link text-lg">Contact</a>
+            </nav>
+            <button id="mobile-menu-button" class="md:hidden text-2xl">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden px-6 pb-4">
+            <a href="#about" class="block py-2 nav-link">About</a>
+            <a href="#experience" class="block py-2 nav-link">Experience</a>
+            <a href="#skills" class="block py-2 nav-link">Skills</a>
+            <a href="#contact" class="block py-2 nav-link">Contact</a>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-6 pt-24 md:pt-32">
+
+        <!-- Hero Section -->
+        <section id="hero" class="min-h-screen flex items-center fade-in-section">
+            <div class="max-w-4xl">
+                <p class="text-xl md:text-2xl highlight-text mb-4">Hi, my name is</p>
+                <h1 class="text-4xl sm:text-6xl md:text-7xl font-black text-slate-200">Marlon Jordan.</h1>
+                <h2 class="text-4xl sm:text-5xl md:text-6xl font-bold text-slate-400 mt-2">I build efficient operational frameworks.</h2>
+                <p class="mt-6 text-lg md:text-xl max-w-2xl text-slate-400">
+                    I'm an operations professional with over a decade of experience in the fintech sector, specializing in optimizing workflows, enhancing data quality, and providing elite technical support. I thrive on solving complex problems and driving process improvements.
+                </p>
+                <div class="mt-8">
+                    <a href="#contact" class="cta-button inline-block bg-transparent border-2 border-[#64ffda] text-[#64ffda] font-bold py-3 px-8 rounded-lg text-lg">
+                        Get In Touch
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Me Section -->
+        <section id="about" class="py-20 md:py-32 fade-in-section">
+            <h2 class="text-3xl md:text-4xl font-bold section-heading mb-12 flex items-center">
+                <span class="highlight-text mr-4">01.</span> About Me
+                <span class="h-px bg-slate-600 flex-grow ml-6"></span>
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-5 gap-10 items-center">
+                <div class="md:col-span-3 text-slate-400 text-lg space-y-4">
+                    <p>
+                        For over 10 years, I've been navigating the dynamic world of financial technology, focusing on what I do best: ensuring things run smoothly, efficiently, and securely. My journey at <span class="highlight-text">Bloomberg LP</span> has taken me from providing high-stakes technical support to executive leadership to architecting robust operational systems as a Product Operations Specialist.
+                    </p>
+                    <p>
+                        I have a proven track record of not just identifying problems, but systematically dissecting them to find the root cause and implement lasting solutions. Whether it's managing the lifecycle of SaaS solutions to save costs, streamlining user access controls, or diving deep into data pipelines to ensure accuracy, I'm passionate about making technology work better for people and businesses.
+                    </p>
+                    <p>
+                        My goal is to leverage this deep experience in a role where I can continue to bridge the gap between technology and business needs, driving operational excellence and contributing to product innovation.
+                    </p>
+                </div>
+                <div class="md:col-span-2 flex justify-center">
+                    <div class="w-64 h-64 rounded-lg overflow-hidden relative group">
+                        <img src="https://placehold.co/400x400/0a192f/64ffda?text=MJ" alt="Marlon Jordan" class="w-full h-full object-cover">
+                         <div class="absolute inset-0 bg-[#64ffda] opacity-30 group-hover:opacity-0 transition-opacity duration-300"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience" class="py-20 md:py-32 fade-in-section">
+            <h2 class="text-3xl md:text-4xl font-bold section-heading mb-12 flex items-center">
+                <span class="highlight-text mr-4">02.</span> Where I've Worked
+                 <span class="h-px bg-slate-600 flex-grow ml-6"></span>
+            </h2>
+            <div class="relative pl-8">
+                <div class="timeline-line"></div>
+                
+                <div class="mb-12 timeline-item">
+                    <h3 class="text-xl font-bold text-slate-200">Product Operations Specialist <span class="highlight-text">@ Bloomberg LP</span></h3>
+                    <p class="text-slate-400 mb-4">August 2021 - Present</p>
+                    <ul class="space-y-3 text-slate-400 list-disc list-inside">
+                        <li>Directed the full implementation of 4+ SaaS solutions, saving approximately $150,000 annually through contract negotiations.</li>
+                        <li>Designed and maintained secure operational workflows for user provisioning and access for over 300 employees.</li>
+                        <li>Conducted root cause analysis on data incidents, partnering with Engineering to improve operational efficiency and data quality.</li>
+                        <li>Investigated and triaged client-side data feed issues, ensuring timely delivery of accurate news data.</li>
+                    </ul>
+                </div>
+
+                <div class="mb-12 timeline-item">
+                    <h3 class="text-xl font-bold text-slate-200">Technical Support Lead Executive <span class="highlight-text">@ Bloomberg LP</span></h3>
+                    <p class="text-slate-400 mb-4">May 2017 - August 2021</p>
+                    <ul class="space-y-3 text-slate-400 list-disc list-inside">
+                        <li>Provided confidential, high-priority technical support to Mike Bloomberg and his executive team with 100% satisfaction.</li>
+                        <li>Coordinated over 200 virtual meetings annually, ensuring reliable technical operations for global presentations.</li>
+                        <li>Led the technical transition for a Windows 10 migration for 8,000 users, creating documentation that streamlined adoption.</li>
+                    </ul>
+                </div>
+
+                <div class="timeline-item">
+                    <h3 class="text-xl font-bold text-slate-200">Senior IT Support Engineer <span class="highlight-text">@ Bloomberg LP</span></h3>
+                    <p class="text-slate-400 mb-4">May 2013 - May 2017</p>
+                    <ul class="space-y-3 text-slate-400 list-disc list-inside">
+                        <li>Provided Tier 2/3 IT support for over 18,000 employees, managing accounts in Active Directory and deploying software via SCCM.</li>
+                        <li>Chaired weekend Incident Management rotations, improving response times and ensuring SLAs were met.</li>
+                        <li>Upgraded self-service IT tools, significantly reducing support tickets for over 5,000 end-users.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- What's Next Section -->
+        <section id="next" class="py-20 md:py-32 text-center fade-in-section">
+             <h2 class="text-3xl md:text-4xl font-bold section-heading mb-4">What's Next?</h2>
+             <p class="text-xl highlight-text mb-6">Seeking New Opportunities in Product & Operations</p>
+             <p class="max-w-3xl mx-auto text-slate-400 text-lg mb-8">
+                 I am actively seeking a challenging new role in product management or operations where I can apply my extensive experience in process optimization, data analysis, and strategic vendor management. I am eager to join an innovative team and contribute to building and scaling exceptional products and services. My ideal position would involve cross-functional collaboration, problem-solving, and a direct impact on business success.
+             </p>
+             <a href="mailto:Marlon.Jordan21@gmail.com" class="cta-button inline-block bg-transparent border-2 border-[#64ffda] text-[#64ffda] font-bold py-3 px-8 rounded-lg text-lg">
+                Let's Talk
+            </a>
+        </section>
+
+        <!-- Skills & Certifications Section -->
+        <section id="skills" class="py-20 md:py-32 fade-in-section">
+            <h2 class="text-3xl md:text-4xl font-bold section-heading mb-12 flex items-center">
+                <span class="highlight-text mr-4">03.</span> Skills & Certifications
+                <span class="h-px bg-slate-600 flex-grow ml-6"></span>
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div>
+                    <h3 class="text-2xl font-bold text-slate-200 mb-6">Professional Skills</h3>
+                    <div class="flex flex-wrap gap-3">
+                        <span class="bg-slate-700 text-slate-300 py-2 px-4 rounded-full">Product Management</span>
+                        <span class="bg-slate-700 text-slate-300 py-2 px-4 rounded-full">SaaS Implementation</span>
+                        <span class="bg-slate-700 text-slate-300 py-2 px-4 rounded-full">Vendor Relations</span>
+                        <span class="bg-slate-700 text-slate-300 py-2 px-4 rounded-full">Operational Workflows</span>
+                        <span class="bg-slate-700 text-slate-300 py-2 px-4 rounded-full">Root Cause Analysis</span>
+                        <span class="bg-slate-700 text-slate-300 py-2 px-4 rounded-full">Incident Management</span>
+                        <span class="bg-slate-700 text-slate-300 py-2 px-4 rounded-full">IT Support (Tier 2 & 3)</span>
+                        <span class="bg-slate-700 text-slate-300 py-2 px-4 rounded-full">Agile & Scrum</span>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-2xl font-bold text-slate-200 mb-6">Tools & Platforms</h3>
+                    <div class="flex flex-wrap gap-3">
+                        <span class="bg-slate-700 text-slate-300 py-2 px-4 rounded-full">Jira</span>
+                        <span class="bg-slate-700 text-slate-300 py-2 px-4 rounded-full">Confluence</span>
+                        <span class="bg-slate-700 text-slate-300 py-2 px-4 rounded-full">Salesforce</span>
+                        <span class="bg-slate-700 text-slate-300 py-2 px-4 rounded-full">SQL</span>
+                        <span class="bg-slate-700 text-slate-300 py-2 px-4 rounded-full">Active Directory</span>
+                        <span class="bg-slate-700 text-slate-300 py-2 px-4 rounded-full">SCCM & JAMF</span>
+                        <span class="bg-slate-700 text-slate-300 py-2 px-4 rounded-full">Microsoft Office Suite</span>
+                        <span class="bg-slate-700 text-slate-300 py-2 px-4 rounded-full">Bloomberg Terminal</span>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-12">
+                 <h3 class="text-2xl font-bold text-slate-200 mb-6">Certifications</h3>
+                 <div class="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 text-center">
+                    <div class="glass-effect rounded-lg p-4 skill-card">
+                        <i class="fas fa-tasks text-4xl highlight-text mb-2"></i>
+                        <p class="font-semibold text-slate-200">PMP</p>
+                        <p class="text-sm text-slate-400">(PMI) - 2025</p>
+                    </div>
+                     <div class="glass-effect rounded-lg p-4 skill-card">
+                        <i class="fas fa-id-card-alt text-4xl highlight-text mb-2"></i>
+                        <p class="font-semibold text-slate-200">ITIL v4</p>
+                         <p class="text-sm text-slate-400">(PeopleCert) - 2024</p>
+                    </div>
+                    <div class="glass-effect rounded-lg p-4 skill-card">
+                        <i class="fas fa-robot text-4xl highlight-text mb-2"></i>
+                        <p class="font-semibold text-slate-200">Google AI</p>
+                        <p class="text-sm text-slate-400">(Essentials) - 2024</p>
+                    </div>
+                    <div class="glass-effect rounded-lg p-4 skill-card">
+                        <i class="fas fa-box-open text-4xl highlight-text mb-2"></i>
+                        <p class="font-semibold text-slate-200">CSPO</p>
+                        <p class="text-sm text-slate-400">(Scrum Alliance) - 2023</p>
+                    </div>
+                    <div class="glass-effect rounded-lg p-4 skill-card">
+                        <i class="fab fa-microsoft text-4xl highlight-text mb-2"></i>
+                        <p class="font-semibold text-slate-200">Azure</p>
+                        <p class="text-sm text-slate-400">(Fundamentals) - 2022</p>
+                    </div>
+                 </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="py-20 md:py-32 text-center fade-in-section">
+            <h2 class="text-3xl font-bold highlight-text">Get In Touch</h2>
+            <p class="text-slate-300 text-lg max-w-xl mx-auto mt-4 mb-8">
+                I'm currently seeking new opportunities and my inbox is always open. Whether you have a question or just want to say hi, I'll get back to you!
+            </p>
+            <a href="mailto:Marlon.Jordan21@gmail.com" class="cta-button inline-block bg-[#64ffda] text-[#0a192f] font-bold py-4 px-10 rounded-lg text-xl">
+                Say Hello
+            </a>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="py-8">
+        <div class="container mx-auto px-6 text-center text-slate-400">
+            <div class="flex justify-center space-x-6 mb-4">
+                <a href="https://linkedin.com/in/mj2117" target="_blank" rel="noopener noreferrer" class="text-2xl hover:text-[#64ffda] transition-colors">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                 <a href="mailto:Marlon.Jordan21@gmail.com" class="text-2xl hover:text-[#64ffda] transition-colors">
+                    <i class="fas fa-envelope"></i>
+                </a>
+            </div>
+            <p>Designed & Built by Gemini for Marlon Jordan</p>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile Menu Toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Close mobile menu when a link is clicked
+        const mobileNavLinks = mobileMenu.querySelectorAll('a');
+        mobileNavLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+
+        // Fade-in sections on scroll
+        const sections = document.querySelectorAll('.fade-in-section');
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('is-visible');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.1 });
+
+        sections.forEach(section => {
+            observer.observe(section);
+        });
+    </script>
+</body>
+</html>
